@@ -1,26 +1,26 @@
 # Old Town Barber App
 
-## 🎯 Doel
+## Doel
 
 Bouw een eenvoudige React barbier applicatie met localStorage. Focus op de essentials: profiel maken, afspraken boeken, en alles bekijken.
 
 **Geschatte tijd:** 3-4 uur  
 **Moeilijkheidsgraad:** Gemiddeld
 
-## 🚀 Wat ga je maken?
+## Wat ga je maken?
 
 Een eenvoudig barbier booking systeem met:
 
 ### **Core Functionaliteit:**
-- 👤 User profiel setup (eerste keer)
-- 💇‍♂️ Afspraak boeken voor jezelf
-- 📋 Overzicht van je eigen boekingen
-- 🏪 Shop info met services en prijzen
-- 🔔 Toast notificaties + afspraak reminders
-- ⏰ Reminder als je afspraak binnen 15 minuten is
-- 💾 Alles opgeslagen in localStorage
+- User profiel setup (eerste keer)
+- Afspraak boeken voor jezelf
+- Overzicht van je eigen boekingen
+- Shop info met services en prijzen
+- Toast notificaties + afspraak reminders
+- Reminder als je afspraak binnen 15 minuten is
+- Alles opgeslagen in localStorage
 
-## 📋 Requirements
+## Requirements
 
 ### **Must Have:**
 
@@ -53,7 +53,7 @@ Een eenvoudig barbier booking systeem met:
    - **Reminder toast als je afspraak binnen 15 minuten is**
    - Gebruik react-toastify
 
-## 🏗️ Project Setup
+## Project Setup
 
 ### **Dependencies:**
 ```bash
@@ -83,7 +83,7 @@ Maak utility functions voor:
 - `setAppointments(appointments)` - save appointments array
 - Alle functions moeten default values returnen bij errors
 
-## 💻 App Layout & Flow
+## App Layout & Flow
 
 ### **First Time User:**
 - Check of userProfile bestaat in localStorage
@@ -118,7 +118,7 @@ const shopData = {
 };
 ```
 
-## 🧩 Wat ga je bouwen?
+## Wat ga je bouwen?
 
 ### **1. UserProfile Component**
 Een formulier waar gebruiker naam, email en telefoon invult. Bij eerste keer gebruik voor setup, later voor bewerken.
@@ -136,7 +136,7 @@ Een formulier waar gebruiker een afspraak kan boeken:
 ### **4. BookingsList Component**
 Toon alle geboekte afspraken op datum gesorteerd, met totaal bedrag.
 
-## 💾 localStorage 
+## localStorage 
 
 **Wat moet je opslaan:**
 - User profiel (naam, email, telefoon)
@@ -148,13 +148,13 @@ Toon alle geboekte afspraken op datum gesorteerd, met totaal bedrag.
 
 **Tip:** Maak helper functies om localStorage makkelijker te maken!
 
-## 🔔 Reminder Feature
+## Reminder Feature
 
 **Simpel idee:** 
 - Bij elke refresh: check of er een afspraak binnen 15 minuten is
 - Zo ja: toon een toast "Reminder: Knipbeurt om 14:30!"
 
-## 📱 Hoe ziet het eruit?
+## Hoe ziet het eruit?
 
 **Eerste keer:**
 ```
@@ -177,7 +177,7 @@ Boek Afspraak         |
 [Boek knop]          |
 ```
 
-## ✅ Wat moet werken?
+## Wat moet werken?
 
 **localStorage Test:**
 - Refresh pagina → je profiel en afspraken zijn er nog
@@ -196,7 +196,7 @@ Boek Afspraak         |
 - Groene toast bij success (boeken, profiel opslaan)
 - Rode toast bij fouten (lege velden)
 
-## 🎯 Success!
+## Success!
 
 Als je dit hebt:
 - ✅ localStorage werkt (data blijft na refresh)
