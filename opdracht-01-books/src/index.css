@@ -1,68 +1,83 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 body {
-  margin: 0;
+  background: rgb(46, 42, 42);
+}
+
+.container {
+  width: 80dvw;
+  margin: 0 auto;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.heading {
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 3rem;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.wrapper {
+  display: flex;
+  gap: 5rem;
+}
+
+.wrapper img {
+  width: 200px;
+  aspect-ratio: 1 / 1.5
+}
+
+.wrapper .book {
+  background: rgba(255, 255, 255, .05);
+  padding: 2rem;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, .2)
+}
+
+.wrapper .book .content {
+  color: #ffffff;
+}
+
+.wrapper .book .content p:nth-child(1) {
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.wrapper .book .content p:nth-child(2) {
+  opacity: .7;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100dvw;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 2rem 0;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+header li {
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .2em;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+header li:hover {
+  color: hsl(348, 41%, 49%);
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.1);
 }

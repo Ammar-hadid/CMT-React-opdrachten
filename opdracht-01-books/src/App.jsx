@@ -1,10 +1,17 @@
 import './App.css'
+import BooksWrapper from './components/BookWrapper.jsx'
+import Header from './components/Header.jsx'
+import Container from './components/Layout.jsx';
 
 function App() {
 
   return (
     <>
-      <h1>Opdracht 1 - Books</h1>
+      <Container>
+        <Header />
+        <h1 className="heading" >Opdracht 1 - Books</h1>
+        <BooksWrapper />
+      </Container>
     </>
   )
 }
