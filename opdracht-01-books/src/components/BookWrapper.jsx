@@ -1,9 +1,14 @@
 import booksArr from '../data/books.js';
 import Book from './book.jsx';
 
+import { useState } from 'react';
+
 const BookWrapper = () => {
+    const [books, Setbook] = useState(booksArr);
+
+
     return (<div className="wrapper">
-        {booksArr.map(b => {
+        {books.map(b => {
             return <Book
                 key={b.id}
                 name={b.name}

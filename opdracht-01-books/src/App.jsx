@@ -1,4 +1,3 @@
-import './App.css'
 import BooksWrapper from './components/BookWrapper.jsx'
 import Header from './components/Header.jsx'
 import Container from './components/Layout.jsx';
