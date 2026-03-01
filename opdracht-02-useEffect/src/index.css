@@ -13,6 +13,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -73,6 +75,11 @@ button:focus-visible {
   }
 }
 
-.clock {
+h1,
+p {
   text-align: center;
+}
+
+.clock {
+  font-size: 52px;
 }

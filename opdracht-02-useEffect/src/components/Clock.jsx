@@ -13,7 +13,7 @@ const Clock = () => {
         }
     }, []);
 
-    return <h1 className='clock'>{time.toLocaleTimeString()}</h1>
+    return <p className='clock'>{time.toLocaleTimeString()}</p>
 }
 
 export default Clock;
