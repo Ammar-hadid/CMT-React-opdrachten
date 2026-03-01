@@ -27,7 +27,14 @@ body {
 
 .wrapper {
   display: flex;
-  gap: 5rem;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.wrapper h2 {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 500;
 }
 
 .wrapper img {
@@ -55,6 +62,11 @@ body {
 
 .wrapper .book .content p:nth-child(2) {
   opacity: .7;
+}
+
+.booksWrapper {
+  display: flex;
+  gap: 3rem;
 }
 
 header {
