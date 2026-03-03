@@ -1,11 +1,13 @@
-import './App.css'
+import MenuWrapper from './Components/MenuWrapper.jsx'
+import Layout from './Components/Layout.jsx';
 
 function App() {
 
   return (
-    <>
-      <h1>Opdracht 4 - Menu</h1>
-    </>
+    <Layout>
+      <h1 className="heading">Our Menu</h1>
+      <MenuWrapper />
+    </Layout>
   )
 }
 
