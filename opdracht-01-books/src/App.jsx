@@ -1,18 +1,23 @@
-import Container from './components/Layout.jsx';
-import BooksWrapper from './components/BookWrapper.jsx'
-import Header from './components/Header.jsx'
+import Home from '../Pages/Home.jsx';
+import About from '../Pages/About.jsx';
+import Contact from '../Pages/Contact.jsx';
+import NoPage from '../Pages/NoPage.jsx';
+import Navigation from '../Pages/Navigation.jsx';
 
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-function App() {
-
+const App = () => {
   return (
-    <>
-      <Container>
-        <Header />
-        <h1 className="heading" >Opdracht 1 - Books</h1>
-        <BooksWrapper />
-      </Container>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Navigation />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
